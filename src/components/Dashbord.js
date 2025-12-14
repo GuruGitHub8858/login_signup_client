@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./style.css"; // Import the CSS file
 
-const Dashboard = ({ setUser }) => {
+const PublicDashboard = ({ setUser }) => {
     const navigate = useNavigate();
 
     const handleLogout = () => {
@@ -31,4 +31,4 @@ const Dashboard = ({ setUser }) => {
     );
 };
 
-export default Dashboard;
+export default PublicDashboard;

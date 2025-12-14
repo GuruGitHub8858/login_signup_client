@@ -13,7 +13,7 @@ const Signup = () => {
     const handleSignup = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:5000/api/auth/register", { name, email, password });
+            const res = await axios.post("http://localhost:5000/api/auth/register", { name, email, password })
             setMessage("✅ Signup successful! Redirecting to login...");
             setTimeout(() => navigate("/"), 2000);
         } catch (err) {
